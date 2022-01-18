@@ -12,11 +12,12 @@ class AnswerManager {
     
     private let queue = DispatchQueue.global(qos: .userInitiated)
     private let dispatchGroup = DispatchGroup()
+    private let apiKey = "fsq3pGRvF9MTSiYPkwXa1V4lbOiElcjsqmsGnVTygxC4uhg="
     
     func getRestaurants(in city: String, category: String, completion: @escaping (AnswerSearchModel?) -> ()) {
         let headers: HTTPHeaders = [
             "Accept": "application/json",
-            "Authorization": "fsq3pGRvF9MTSiYPkwXa1V4lbOiElcjsqmsGnVTygxC4uhg="
+            "Authorization": apiKey
         ]
         let urlString = "https://api.foursquare.com/v3/places/search?categories=" + category + "&near=" + city + "&limit=20"
         var model: AnswerSearchModel?

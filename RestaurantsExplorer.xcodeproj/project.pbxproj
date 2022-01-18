@@ -18,6 +18,7 @@
 		7B457B5C279610DD00A77CC6 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B457B5B279610DD00A77CC6 /* RestaurantsViewModel.swift */; };
 		7B457B5F2796315C00A77CC6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B457B5D2796315C00A77CC6 /* TableViewCell.swift */; };
 		7B457B602796315C00A77CC6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B457B5E2796315C00A77CC6 /* TableViewCell.xib */; };
+		7B4906DD2796D40A0039CA13 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7B457B5B279610DD00A77CC6 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
 		7B457B5D2796315C00A77CC6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7B457B5E2796315C00A77CC6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
 		805DCBE4407BDCADAA7F81CE /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		F541D261E9A79812FED99E14 /* Pods-RestaurantsExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				7B457B432795F89D00A77CC6 /* Assets.xcassets */,
 				7B457B452795F89D00A77CC6 /* LaunchScreen.storyboard */,
 				7B457B482795F89D00A77CC6 /* Info.plist */,
+				7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */,
 			);
 			path = RestaurantsExplorer;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B457B3F2795F89B00A77CC6 /* RestaurantsViewController.swift in Sources */,
+				7B4906DD2796D40A0039CA13 /* ViewModelDelegate.swift in Sources */,
 				7B457B5C279610DD00A77CC6 /* RestaurantsViewModel.swift in Sources */,
 				7B457B582795FEFD00A77CC6 /* AnswerManager.swift in Sources */,
 				7B457B3B2795F89B00A77CC6 /* AppDelegate.swift in Sources */,
@@ -443,7 +447,6 @@
 				INFOPLIST_FILE = RestaurantsExplorer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +475,6 @@
 				INFOPLIST_FILE = RestaurantsExplorer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
