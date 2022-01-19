@@ -8,6 +8,6 @@ target 'RestaurantsExplorer' do
   # Pods for RestaurantsExplorer
   pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire', '~> 5.5'
-
+  pod 'SwiftGen', '~> 6.0'
 
 end

@@ -12,17 +12,16 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet var backgroundView: UIView!
-    
-    
+    @IBOutlet var backView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        backView.layer.cornerRadius = backView.frame.height / 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
+
 }

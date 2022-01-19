@@ -9,52 +9,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="RestaurantsExplorer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="204" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="RestaurantsExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k17-Oh-3gl">
-                        <rect key="frame" x="10" y="10" width="300" height="108"/>
+                        <rect key="frame" x="10" y="10" width="300" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-55-neF">
-                                <rect key="frame" x="8" y="8" width="41" height="21"/>
+                                <rect key="frame" x="8" y="8" width="284" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70G-aG-NxE">
-                                <rect key="frame" x="10" y="34" width="65" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="rOR-5M-Nk8"/>
-                                    <constraint firstAttribute="height" constant="64" id="ucG-U2-acC"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-8x-d8N">
-                                <rect key="frame" x="59" y="8" width="41" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.53725490196078429" green="0.27450980392156865" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-dn-4GG">
-                                <rect key="frame" x="91" y="52" width="44.5" height="21"/>
+                                <rect key="frame" x="8" y="69" width="284" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.71764705882352942" green="0.38431372549019605" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-8x-d8N">
+                                <rect key="frame" x="8" y="40" width="284" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.71764705882352942" green="0.38431372549019605" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.16078431372549018" green="0.35686274509803922" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="cR2-8x-d8N" firstAttribute="leading" secondItem="k17-Oh-3gl" secondAttribute="leading" constant="8" id="17V-gX-czM"/>
                             <constraint firstItem="R8a-55-neF" firstAttribute="leading" secondItem="k17-Oh-3gl" secondAttribute="leading" constant="8" id="4Nx-x1-umJ"/>
                             <constraint firstItem="R8a-55-neF" firstAttribute="top" secondItem="k17-Oh-3gl" secondAttribute="top" constant="8" id="8WN-Kf-7Bh"/>
-                            <constraint firstAttribute="bottom" secondItem="70G-aG-NxE" secondAttribute="bottom" constant="10" id="LZb-dQ-mGD"/>
-                            <constraint firstItem="cR2-8x-d8N" firstAttribute="top" secondItem="k17-Oh-3gl" secondAttribute="top" constant="8" id="Ls9-HK-Hcz"/>
-                            <constraint firstItem="cR2-8x-d8N" firstAttribute="leading" secondItem="R8a-55-neF" secondAttribute="trailing" constant="10" id="mKI-LK-osf"/>
-                            <constraint firstItem="nNQ-dn-4GG" firstAttribute="top" secondItem="cR2-8x-d8N" secondAttribute="bottom" constant="23" id="rgR-H8-780"/>
-                            <constraint firstItem="nNQ-dn-4GG" firstAttribute="leading" secondItem="70G-aG-NxE" secondAttribute="trailing" constant="16" id="uNg-gb-SHm"/>
-                            <constraint firstItem="70G-aG-NxE" firstAttribute="leading" secondItem="k17-Oh-3gl" secondAttribute="leading" constant="10" id="wM5-Bm-Kaf"/>
+                            <constraint firstAttribute="trailing" secondItem="cR2-8x-d8N" secondAttribute="trailing" constant="8" id="BaL-RB-5M4"/>
+                            <constraint firstAttribute="height" constant="100" id="IEC-CT-xg8"/>
+                            <constraint firstItem="cR2-8x-d8N" firstAttribute="top" secondItem="R8a-55-neF" secondAttribute="bottom" constant="11" id="XOK-V1-aF1"/>
+                            <constraint firstAttribute="bottom" secondItem="nNQ-dn-4GG" secondAttribute="bottom" constant="10" id="Yjx-n9-lfK"/>
+                            <constraint firstAttribute="trailing" secondItem="nNQ-dn-4GG" secondAttribute="trailing" constant="8" id="eC5-Jn-Opp"/>
+                            <constraint firstItem="nNQ-dn-4GG" firstAttribute="leading" secondItem="k17-Oh-3gl" secondAttribute="leading" constant="8" id="jKF-Iz-MKl"/>
+                            <constraint firstAttribute="trailing" secondItem="R8a-55-neF" secondAttribute="trailing" constant="8" id="mlb-ky-s3O"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -67,13 +62,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="backgroundView" destination="k17-Oh-3gl" id="bOQ-Y1-QEH"/>
+                <outlet property="backView" destination="k17-Oh-3gl" id="bOQ-Y1-QEH"/>
                 <outlet property="categoryLabel" destination="nNQ-dn-4GG" id="6fY-jv-mx9"/>
-                <outlet property="iconImageView" destination="70G-aG-NxE" id="Scz-Bc-rHp"/>
                 <outlet property="locationLabel" destination="cR2-8x-d8N" id="qKk-Oi-XoY"/>
                 <outlet property="nameLabel" destination="R8a-55-neF" id="muV-i9-EnX"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
+            <point key="canvasLocation" x="137.68115942028987" y="166.07142857142856"/>
         </tableViewCell>
     </objects>
 </document>

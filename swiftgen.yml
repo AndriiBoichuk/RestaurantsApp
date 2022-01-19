@@ -1,0 +1,12 @@
+strings:
+  inputs: RestaurantsExplorer/Resource
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift5
+      output: RestaurantsExplorer/Resource/SwiftGen/Strings.swift
+xcassets:
+  inputs:
+    - RestaurantsExplorer/Resource/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: RestaurantsExplorer/Resource/SwiftGen/Assets.swift
