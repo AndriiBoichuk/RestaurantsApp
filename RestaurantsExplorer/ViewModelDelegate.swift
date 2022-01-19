@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ViewModelDelegate {
-    
-    func updateTableView()
-    
+
+    func updateView()
+
 }

@@ -19,6 +19,14 @@
 		7B457B5F2796315C00A77CC6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B457B5D2796315C00A77CC6 /* TableViewCell.swift */; };
 		7B457B602796315C00A77CC6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B457B5E2796315C00A77CC6 /* TableViewCell.xib */; };
 		7B4906DD2796D40A0039CA13 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */; };
+		7B4906DF2796D9E50039CA13 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906DE2796D9E50039CA13 /* Category.swift */; };
+		7B4906E12796F45A0039CA13 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7B4906E02796F45A0039CA13 /* swiftgen.yml */; };
+		7B4906E72796F9350039CA13 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906E52796F9350039CA13 /* Assets.swift */; };
+		7B4906E82796F9350039CA13 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906E62796F9350039CA13 /* Strings.swift */; };
+		7B4906EA2796F96A0039CA13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B4906E92796F96A0039CA13 /* Localizable.strings */; };
+		7B4906ED279710E80039CA13 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906EC279710E80039CA13 /* DetailViewController.swift */; };
+		7B4906EF279730B10039CA13 /* RestaurantDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */; };
+		7B4906F1279735210039CA13 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906F0279735210039CA13 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +44,14 @@
 		7B457B5D2796315C00A77CC6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7B457B5E2796315C00A77CC6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
+		7B4906DE2796D9E50039CA13 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7B4906E02796F45A0039CA13 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		7B4906E52796F9350039CA13 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		7B4906E62796F9350039CA13 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		7B4906E92796F96A0039CA13 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7B4906EC279710E80039CA13 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailModel.swift; sourceTree = "<group>"; };
+		7B4906F0279735210039CA13 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		805DCBE4407BDCADAA7F81CE /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		F541D261E9A79812FED99E14 /* Pods-RestaurantsExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +88,7 @@
 		7B457B2E2795F89B00A77CC6 = {
 			isa = PBXGroup;
 			children = (
+				7B4906E02796F45A0039CA13 /* swiftgen.yml */,
 				7B457B392795F89B00A77CC6 /* RestaurantsExplorer */,
 				7B457B382795F89B00A77CC6 /* Products */,
 				4C94F11400DBDC4359C5096A /* Pods */,
@@ -93,9 +110,9 @@
 				7B457B4E2795FA0500A77CC6 /* Search */,
 				7B457B4F2795FA1500A77CC6 /* Detail */,
 				7B457B562795FEEC00A77CC6 /* Manager */,
+				7B4906E32796F52D0039CA13 /* Resource */,
 				7B457B3A2795F89B00A77CC6 /* AppDelegate.swift */,
 				7B457B3C2795F89B00A77CC6 /* SceneDelegate.swift */,
-				7B457B432795F89D00A77CC6 /* Assets.xcassets */,
 				7B457B452795F89D00A77CC6 /* LaunchScreen.storyboard */,
 				7B457B482795F89D00A77CC6 /* Info.plist */,
 				7B4906DC2796D40A0039CA13 /* ViewModelDelegate.swift */,
@@ -127,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7B457B592796045400A77CC6 /* AnswerSearchModel.swift */,
+				7B4906DE2796D9E50039CA13 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +170,7 @@
 		7B457B532795FA3400A77CC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +178,7 @@
 		7B457B542795FA3900A77CC6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7B4906F0279735210039CA13 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +186,7 @@
 		7B457B552795FA3F00A77CC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B4906EC279710E80039CA13 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +199,25 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		7B4906E32796F52D0039CA13 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7B4906E42796F8B50039CA13 /* Swiftgen */,
+				7B457B432795F89D00A77CC6 /* Assets.xcassets */,
+				7B4906E92796F96A0039CA13 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7B4906E42796F8B50039CA13 /* Swiftgen */ = {
+			isa = PBXGroup;
+			children = (
+				7B4906E52796F9350039CA13 /* Assets.swift */,
+				7B4906E62796F9350039CA13 /* Strings.swift */,
+			);
+			path = Swiftgen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +226,7 @@
 			buildConfigurationList = 7B457B4B2795F89D00A77CC6 /* Build configuration list for PBXNativeTarget "RestaurantsExplorer" */;
 			buildPhases = (
 				67F635B23B17D3801A44DF4E /* [CP] Check Pods Manifest.lock */,
+				7B4906E22796F4BD0039CA13 /* SwiftGen */,
 				7B457B332795F89B00A77CC6 /* Sources */,
 				7B457B342795F89B00A77CC6 /* Frameworks */,
 				7B457B352795F89B00A77CC6 /* Resources */,
@@ -238,9 +279,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4906EA2796F96A0039CA13 /* Localizable.strings in Resources */,
 				7B457B472795F89D00A77CC6 /* LaunchScreen.storyboard in Resources */,
 				7B457B602796315C00A77CC6 /* TableViewCell.xib in Resources */,
 				7B457B442795F89D00A77CC6 /* Assets.xcassets in Resources */,
+				7B4906E12796F45A0039CA13 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +312,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7B4906E22796F4BD0039CA13 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
+		};
 		A629DAF1C78B93AE2615CBD7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,12 +355,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B457B3F2795F89B00A77CC6 /* RestaurantsViewController.swift in Sources */,
+				7B4906E82796F9350039CA13 /* Strings.swift in Sources */,
 				7B4906DD2796D40A0039CA13 /* ViewModelDelegate.swift in Sources */,
+				7B4906ED279710E80039CA13 /* DetailViewController.swift in Sources */,
 				7B457B5C279610DD00A77CC6 /* RestaurantsViewModel.swift in Sources */,
 				7B457B582795FEFD00A77CC6 /* AnswerManager.swift in Sources */,
 				7B457B3B2795F89B00A77CC6 /* AppDelegate.swift in Sources */,
+				7B4906DF2796D9E50039CA13 /* Category.swift in Sources */,
+				7B4906EF279730B10039CA13 /* RestaurantDetailModel.swift in Sources */,
+				7B4906F1279735210039CA13 /* DetailViewModel.swift in Sources */,
 				7B457B3D2795F89B00A77CC6 /* SceneDelegate.swift in Sources */,
 				7B457B5F2796315C00A77CC6 /* TableViewCell.swift in Sources */,
+				7B4906E72796F9350039CA13 /* Assets.swift in Sources */,
 				7B457B5A2796045400A77CC6 /* AnswerSearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

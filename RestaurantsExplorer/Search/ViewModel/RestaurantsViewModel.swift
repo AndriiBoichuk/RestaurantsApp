@@ -18,12 +18,16 @@ class RestaurantsViewModel {
         self.answerManager = answerManager
     }
     
-    func loadRestaurants(city: String = "Kyiv", category: String = "13065") {
+    func loadRestaurants(city: String = L10n.Default.city, category: String = L10n.Default.category) {
         answerManager.getRestaurants(in: city, category: category) { answerSearchModel in
             guard let result = answerSearchModel else { return }
             self.restaurants = result.results
-            self.delegate?.updateTableView()
+            self.delegate?.updateView()
         }
+    }
+    
+    func getAnswerManager() -> AnswerManager {
+        return answerManager
     }
     
     func getRestaurant(at indexPath: IndexPath) -> Restaurant {
@@ -32,6 +36,10 @@ class RestaurantsViewModel {
     
     func getCount() -> Int {
         return restaurants.count
+    }
+    
+    func  getId(at indexPath: IndexPath) -> String {
+        return restaurants[indexPath.row].fsq_id
     }
     
 }

@@ -15,6 +15,7 @@ struct AnswerSearchModel: Decodable {
 
 struct Restaurant: Decodable {
 
+    let fsq_id: String
     let categories: [Categories]
     let location: Location
     let name: String
@@ -38,7 +39,7 @@ struct Icon: Decodable {
 
 struct Location: Decodable {
     
-    let address: String
+    let address: String?
     let locality: String?
     let region: String?
 

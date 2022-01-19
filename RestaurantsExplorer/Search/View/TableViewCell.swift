@@ -13,16 +13,15 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet var backView: UIView!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         backView.layer.cornerRadius = backView.frame.height / 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
+
 }

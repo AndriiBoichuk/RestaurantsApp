@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  RestaurantsExplorer
+
+  Created by Андрій Бойчук on 18.01.2022.
+  
+*/
+
+"default.city" = "Kyiv";
+"default.category" = "13065";
+"tableView.cell" = "TableViewCell";
+"cell.identifier" = "CustomCell";
+"title.label.search" = "Restaurants";
+"title.label.detail" = "Detail";
+"font.detail.helvetica.ultralight" = "HelveticaNeue-UltraLight";
+"font.detail.helvetica.bold" = "HelveticaNeue-SemiBold";
+"font.detail.charter" = "Charter";
+"font.detail.cochin" = "Cochin";
