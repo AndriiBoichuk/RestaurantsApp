@@ -27,6 +27,7 @@
 		7B4906ED279710E80039CA13 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906EC279710E80039CA13 /* DetailViewController.swift */; };
 		7B4906EF279730B10039CA13 /* RestaurantDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */; };
 		7B4906F1279735210039CA13 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906F0279735210039CA13 /* DetailViewModel.swift */; };
+		7B4906F327997E170039CA13 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4906F227997E170039CA13 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		7B4906EC279710E80039CA13 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailModel.swift; sourceTree = "<group>"; };
 		7B4906F0279735210039CA13 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7B4906F227997E170039CA13 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		805DCBE4407BDCADAA7F81CE /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		F541D261E9A79812FED99E14 /* Pods-RestaurantsExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.debug.xcconfig"; path = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				7B4906EE279730B10039CA13 /* RestaurantDetailModel.swift */,
+				7B4906F227997E170039CA13 /* Artwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				7B4906DF2796D9E50039CA13 /* Category.swift in Sources */,
 				7B4906EF279730B10039CA13 /* RestaurantDetailModel.swift in Sources */,
 				7B4906F1279735210039CA13 /* DetailViewModel.swift in Sources */,
+				7B4906F327997E170039CA13 /* Artwork.swift in Sources */,
 				7B457B3D2795F89B00A77CC6 /* SceneDelegate.swift in Sources */,
 				7B457B5F2796315C00A77CC6 /* TableViewCell.swift in Sources */,
 				7B4906E72796F9350039CA13 /* Assets.swift in Sources */,

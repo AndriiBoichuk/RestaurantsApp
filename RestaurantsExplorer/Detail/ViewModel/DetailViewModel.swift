@@ -64,4 +64,8 @@ class DetailViewModel {
         return location
     }
     
+    func getCoordinates() -> Coordinate? {
+        return restaurantDetail?.geocodes.main
+    }
+    
 }

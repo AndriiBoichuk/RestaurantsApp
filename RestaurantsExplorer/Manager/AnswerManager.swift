@@ -38,7 +38,7 @@ class AnswerManager {
     }
     
     func getDetailInfo(at id: String, completion: @escaping (RestaurantDetailModel?) -> Void) {
-        let urlString = "https://api.foursquare.com/v3/places/" + id + "?fields=name%2Clocation%2Cdescription%2Ctel%2Crating"
+        let urlString = "https://api.foursquare.com/v3/places/" + id + "?fields=name%2Clocation%2Cdescription%2Ctel%2Crating%2Cgeocodes"
         var restaurantDetail: RestaurantDetailModel?
         dispatchGroup.enter()
         AF.request(urlString, headers: headers).responseDecodable(of: RestaurantDetailModel.self, queue: queue) { response in

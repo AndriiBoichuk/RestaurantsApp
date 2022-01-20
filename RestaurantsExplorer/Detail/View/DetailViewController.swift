@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import MapKit
 
 class DetailViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class DetailViewController: UIViewController {
     private let descriptionLabel = UILabel()
     private let telephoneLabel = UILabel()
     private let ratingLabel = UILabel()
+    private let mapView = MKMapView()
     
     private let viewModel: DetailViewModel
     
@@ -50,6 +52,7 @@ class DetailViewController: UIViewController {
         initRatingLabel()
         initDescriptionLabel()
         initTelephoneLabel()
+        initMapView()
     }
     
     private func initNameLabel() {
@@ -83,7 +86,7 @@ class DetailViewController: UIViewController {
     
     private func initDescriptionLabel() {
         view.addSubview(descriptionLabel)
-        descriptionLabel.font = UIFont(name: L10n.Font.Detail.Helvetica.ultralight, size: 32)
+        descriptionLabel.font = UIFont(name: L10n.Font.Detail.Helvetica.ultralight, size: 18)
         descriptionLabel.numberOfLines = 0
         descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(ratingLabel.snp_bottomMargin).offset(30)
@@ -98,6 +101,16 @@ class DetailViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(50)
         }
+    }
+    
+    private func initMapView() {
+        view.addSubview(mapView)
+        mapView.snp.makeConstraints { make in
+            make.top.equalTo(descriptionLabel.snp_bottomMargin).offset(40)
+            make.bottom.equalTo(telephoneLabel.snp_topMargin).offset(-20)
+            make.trailing.leading.equalToSuperview().inset(20)
+        }
+        mapView.layer.cornerRadius = 10
     }
 
 }
@@ -115,6 +128,32 @@ extension DetailViewController: ViewModelDelegate {
         if !telephone.isEmpty {
             telephoneLabel.text = "Tel: " + telephone
         }
+        if let coordinates = viewModel.getCoordinates() {
+            let latitude = coordinates.latitude
+            let longitude = coordinates.longitude
+            let initialLocation = CLLocation(latitude: latitude, longitude: longitude)
+            mapView.centerToLocation(initialLocation)
+            let title = viewModel.getName()
+            let rating = "Rate: " + viewModel.getRating()
+            let artwork = Artwork(title: title, rating: rating, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+            mapView.addAnnotation(artwork)
+        }
+        
     }
+    
+}
+
+private extension MKMapView {
+    
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 1000
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
     
 }
